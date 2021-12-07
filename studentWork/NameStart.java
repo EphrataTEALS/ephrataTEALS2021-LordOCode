@@ -1,9 +1,9 @@
 
-package sampleCode.StringPro;
+package studentWork;
 
 import java.util.*;  // for Scanner
 
-public class ProcessName {
+public class NameStart {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
         System.out.print("Type your name: ");
@@ -19,3 +19,4 @@ public class ProcessName {
         //Type your name: Darwin Schweitzer
         //Your name is: Schweitzer, D.
     }
+}
