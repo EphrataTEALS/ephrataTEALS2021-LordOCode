@@ -1,3 +1,5 @@
+package studentWork.csv_parsing;
+
 public class CSV {
     /*
      * Write a method called `parseCSV`.
@@ -28,5 +30,25 @@ public class CSV {
     }
 
     /*** write your method here ***/
+       public static int parseCSV(String s){
+           int colNum = 1
+           while(s.indexOf(",") != -1){
+        
+           
+           //find the first comma
+           int commaIndex = s.indexOf(",");
+           System.out.print(commaIndex);
+            
 
+           colNum++;
+           //pull everything before comma
+           String colData = s.substring(0, commaIndex);
+           System.out.print(colData);
+
+           s = s.substring(commaIndex);
+           
+           }
+           System.out.println(s)
+           return 0;
+       }
 }
