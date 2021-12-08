@@ -1,3 +1,5 @@
+package studentWork.redundancy;
+
 
 import java.util.Scanner;
 
@@ -32,5 +34,7 @@ public class Problem3 {
         System.out.println("The final total is " + total);
         System.out.println("The final sum is " + sum);
         System.out.println("The final counts are " + count1 + " 1s and " + count2 + " 2s");
+    console.close();
     }
+
 }

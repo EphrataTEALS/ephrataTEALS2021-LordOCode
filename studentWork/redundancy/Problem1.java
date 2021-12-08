@@ -1,3 +1,4 @@
+package studentWork.redundancy;
 
 import java.util.Scanner;
 
@@ -20,5 +21,8 @@ public class Problem1 {
             System.out.println("Spongebob Squarepants! " + x);
         }
         System.out.println(a);
-    }
+    console.close();
+}
+ 
+
 }

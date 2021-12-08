@@ -1,3 +1,5 @@
+package studentWork.redundancy;
+
 
 import java.util.Scanner;
 
@@ -25,5 +27,6 @@ public class Problem2 {
             x = -100;
         }
         System.out.println("The final values are " + b + " and " + x);
+    console.close();
     }
 }
