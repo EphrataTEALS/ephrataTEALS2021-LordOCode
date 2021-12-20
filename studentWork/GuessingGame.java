@@ -10,25 +10,24 @@ package studentWork;
      int turnCount = 6;
      Random r = new Random();
      int answer = r.nextInt(100);
-        Scanner Guess = new Scanner(System.in);
-          int stop = Guess.nextInt();
-        while(stop != -1 ){
-         while(turnCount >= 0){
-         System.out.println("Enter a number between 0 and 100");
-         int finalGuess = Guess.nextInt();
-        if(finalGuess == answer){
-          System.out.println("Nice! the answer is " + answer);
-        }
-         else if (finalGuess > answer){
-          System.out.println("Too High.");
-         }
-          else if (finalGuess < answer){
-           System.out.println("Too Low");
-          turnCount--;
+        try (Scanner Guess = new Scanner(System.in)) {
+          while(turnCount >= 0){
+           System.out.println("Enter a number between 0 and 100");
+           int finalGuess = Guess.nextInt();
+          if(finalGuess == answer){
+            System.out.println("Nice! the answer is " + answer);
+          }
+           else if (finalGuess > answer){
+            System.out.println("Too High.");
+           }
+            else if (finalGuess < answer){
+             System.out.println("Too Low");
+            turnCount--;
+            }
           }
         }
-        System.out.println("Thanks for playing!");
+          
+         System.out.println("Thanks for playing!");
       }    
    }   
   
-}
